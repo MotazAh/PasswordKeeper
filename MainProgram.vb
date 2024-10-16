@@ -5,6 +5,7 @@ Public Class MainProgram
     Dim loginHandler As LoginHandler = LoginHandler.GetSingleton()
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        tableLayoutPass.RowStyles.Clear()
         tableLayoutPass.RowStyles.Add(New RowStyle(SizeType.Absolute, 25))
         PassHandler.LoadPasswords()
         For Each kvp As KeyValuePair(Of String, String()) In PassHandler.passDict
@@ -174,4 +175,20 @@ Public Class MainProgram
             Return cp
         End Get
     End Property
+
+    Private Sub txtDescription_TextChanged(sender As Object, e As EventArgs) Handles txtDescription.TextChanged
+        If txtDescription.Text = "" Or txtPassword.Text = "" Then
+            btnAddPassword.Enabled = False
+        Else
+            btnAddPassword.Enabled = True
+        End If
+    End Sub
+
+    Private Sub txtPassword_TextChanged(sender As Object, e As EventArgs) Handles txtPassword.TextChanged
+        If txtDescription.Text = "" Or txtPassword.Text = "" Then
+            btnAddPassword.Enabled = False
+        Else
+            btnAddPassword.Enabled = True
+        End If
+    End Sub
 End Class

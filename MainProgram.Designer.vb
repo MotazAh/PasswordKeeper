@@ -36,6 +36,7 @@ Partial Class MainProgram
         '
         'btnAddPassword
         '
+        Me.btnAddPassword.Enabled = False
         Me.btnAddPassword.Location = New System.Drawing.Point(670, 405)
         Me.btnAddPassword.Name = "btnAddPassword"
         Me.btnAddPassword.Size = New System.Drawing.Size(118, 33)
@@ -94,7 +95,7 @@ Partial Class MainProgram
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.92272!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.07728!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.lblPasswordsHeader, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.lblDescriptionsHeader, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top
@@ -112,7 +113,7 @@ Partial Class MainProgram
         Me.lblPasswordsHeader.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblPasswordsHeader.AutoSize = True
         Me.lblPasswordsHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!)
-        Me.lblPasswordsHeader.Location = New System.Drawing.Point(440, 4)
+        Me.lblPasswordsHeader.Location = New System.Drawing.Point(439, 4)
         Me.lblPasswordsHeader.Name = "lblPasswordsHeader"
         Me.lblPasswordsHeader.Size = New System.Drawing.Size(83, 20)
         Me.lblPasswordsHeader.TabIndex = 1
@@ -123,7 +124,7 @@ Partial Class MainProgram
         Me.lblDescriptionsHeader.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblDescriptionsHeader.AutoSize = True
         Me.lblDescriptionsHeader.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!)
-        Me.lblDescriptionsHeader.Location = New System.Drawing.Point(113, 4)
+        Me.lblDescriptionsHeader.Location = New System.Drawing.Point(112, 4)
         Me.lblDescriptionsHeader.Name = "lblDescriptionsHeader"
         Me.lblDescriptionsHeader.Size = New System.Drawing.Size(95, 20)
         Me.lblDescriptionsHeader.TabIndex = 0
@@ -141,18 +142,18 @@ Partial Class MainProgram
         Me.tableLayoutPass.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.31546!))
         Me.tableLayoutPass.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.68454!))
         Me.tableLayoutPass.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75.0!))
-        Me.tableLayoutPass.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75.0!))
+        Me.tableLayoutPass.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79.0!))
         Me.tableLayoutPass.Dock = System.Windows.Forms.DockStyle.Top
         Me.tableLayoutPass.Location = New System.Drawing.Point(0, 29)
         Me.tableLayoutPass.MaximumSize = New System.Drawing.Size(800, 330)
         Me.tableLayoutPass.MinimumSize = New System.Drawing.Size(800, 0)
         Me.tableLayoutPass.Name = "tableLayoutPass"
         Me.tableLayoutPass.RowCount = 1
-        Me.tableLayoutPass.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
-        Me.tableLayoutPass.Size = New System.Drawing.Size(800, 31)
+        Me.tableLayoutPass.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
+        Me.tableLayoutPass.Size = New System.Drawing.Size(800, 34)
         Me.tableLayoutPass.TabIndex = 17
         '
-        'Form1
+        'MainProgram
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -165,7 +166,7 @@ Partial Class MainProgram
         Me.Controls.Add(Me.txtDescription)
         Me.Controls.Add(Me.btnAddPassword)
         Me.DoubleBuffered = True
-        Me.Name = "Form1"
+        Me.Name = "MainProgram"
         Me.Text = "Form1"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
